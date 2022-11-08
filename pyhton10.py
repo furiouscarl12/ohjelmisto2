@@ -40,7 +40,7 @@ class House:
         self.elevator_list[elevator_id].move(target_floor)
 
     def fire_alarm(self):
-        print(f"The fire alarm has been activated! All elevators heading to the lowest floor.\n")
+        print(f"The fire alarm.\n")
         for i in range(0, self.elevator_count):
             self.move_elevator(0 + i, self.lowest_floor)
 
@@ -97,7 +97,7 @@ class Race:
 
     def print(self):
         for car in cars:
-            print(f"{car.plate}: top speed: {car.top_speed:.2f} km/h, "
+            print(f"{car.plate}: top speed: {car.top_speed:.2f} km/h, ")
                   f"current speed: {car.curr_speed:.1f} km/h, distance: {car.dist:.1f} km")
 
     def race_over(self):
